@@ -3,30 +3,33 @@
 // =========================================
 
 // Variables
+$base: #3acec2;
+$base-dark: darken($base, 25%);
+$base-light: lighten($base, 25%);
 
-
-
+$compliment: complement($base);
+$compliment-light: lighten($compliment, 10%);
 // Header
 header {
-  
+  background-color: $base;
   h1 {
-
+    color: $compliment;
   }
   p {
-
+    color: $base-dark;
   }
 }
 
 // Nav
 .main-nav a {
-
+  color: $base-light;
 }
 
 // Button
 .btn {
-  
+    color: $base;
+    background-color: $compliment;
   &:hover {
-    
+    background-color: $compliment-light;
   }
 }
-
